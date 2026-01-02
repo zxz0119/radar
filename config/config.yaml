@@ -96,10 +96,6 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hunan-exam-2026"           # 唯一标识 ID
-      name: "湖南省考官方资讯"         # 显示名称
-      url: "https://www.hxw.gov.cn/channel/20650.html" # 你提供的目标链接
-      # max_age_days: 3
 
     - id: "hacker-news"
       name: "Hacker News"
