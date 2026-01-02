@@ -73,15 +73,6 @@ platforms:
 # max_age_days: 可选，覆盖全局 freshness_filter.max_age_days
 # ===============================================================
 rss:
-  enabled: true                       # 启用 RSS 抓取
-  freshness_filter:
-    enabled: true                     # 启用新鲜度过滤
-    max_age_days: 3                   # 只看 3 天内的新公告
-  feeds:
-    - id: "hunan-exam-2026"           # 唯一标识 ID
-      name: "湖南省考官方资讯"         # 显示名称
-      url: "https://www.hxw.gov.cn/channel/20650.html" # 你提供的目标链接
-      enabled: true
   # 文章新鲜度过滤配置（全局默认值）
   # 过滤掉发布时间超过指定天数的旧文章，避免同一篇文章重复出现在推送中
   #
@@ -103,6 +94,12 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
+    feeds:
+    - id: "hunan-exam-2026"           # 唯一标识 ID
+      name: "湖南省考官方资讯"         # 显示名称
+      url: "https://www.hxw.gov.cn/channel/20650.html" # 你提供的目标链接
+      # max_age_days: 3
+
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
