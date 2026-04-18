@@ -47,6 +47,9 @@ permissions:
   contents: read
   actions: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
