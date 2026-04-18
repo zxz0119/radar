@@ -40,8 +40,8 @@ app:
 # 详细时间线图请查看 config/timeline.yaml
 # ===============================================================
 schedule:
-  enabled: true                         # 是否启用调度系统
-  preset: "morning_evening"             # 预设模板名称（见上方说明）
+  enabled: false                         # 是否启用调度系统
+  preset: "always_on"             # 预设模板名称（见上方说明）
 
 
 # ===============================================================
@@ -151,7 +151,7 @@ rss:
 # - incremental：最少打扰，只看新增
 # ===============================================================
 report:
-  mode: "current"                     # daily | current | incremental（schedule 开启时作为默认值）
+  mode: "incremental"                     # daily | current | incremental（schedule 开启时作为默认值）
 
   display_mode: "keyword"             # 分组维度: keyword | platform
                                       # keyword: 按关键词分组显示（默认）
@@ -178,7 +178,7 @@ report:
 # 5) 这里决定“筛选路径”，不决定 AI 模型（模型在 ai 段）
 # ===============================================================
 filter:
-  method: "ai"                     # 可选: keyword | ai
+  method: "keyword"                     # 可选: keyword | ai
 
   # AI 模式标签排序开关（仅 ai 模式生效）
   # true: 按标签优先级排序（来自兴趣描述提取顺序）
