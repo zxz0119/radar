@@ -109,6 +109,9 @@ rss:
       url: "http://www.ruanyifeng.com/blog/atom.xml"
       # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
     
+    - id: "aihot"
+      name: "AI HOT 精选"
+      url: "https://aihot.virxact.com/feed.xml"
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
