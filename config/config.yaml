@@ -102,7 +102,7 @@ rss:
     - id: "aihot"
       name: "AI HOT 精选"
       url: "https://aihot.virxact.com/feed.xml"
-      max_age_days: 1
+      max_age_days: 3
 
 # ===============================================================
 # 4. 报告模式
